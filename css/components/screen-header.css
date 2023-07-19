@@ -12,3 +12,19 @@
 .screen-header__icons span {
   margin-left: 25px;
 }
+.screen-header__icons span:nth-child(2) {
+  position: relative;
+}
+.screen-header__chat-plus {
+  background-color: white;
+  border-radius: 4px;
+  display: flex;
+  width: 10px;
+  height: 10px;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  position: absolute;
+  right: 1px;
+  top: 4.5px;
+}
