@@ -13,10 +13,13 @@
 /* Screens */
 @import "screens/login.css";
 @import "screens/friends.css";
+@import "screens/find.css";
 
 body {
   font-family: "Open Sans", sans-serif;
   color: #2e363e;
+  height: max-content;
+  margin-bottom: 70px;
 }
 
 .main-screen {
