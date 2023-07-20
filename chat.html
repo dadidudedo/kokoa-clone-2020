@@ -4,10 +4,10 @@
     <link rel="stylesheet" href="css/styles.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chat - Kokoa Clone</title>
+    <title>Chat whit Mamang - Kokoa Clone</title>
   </head>
 
-  <body onload="showClock()">
+  <body onload="showClock()" id="chat-screen">
     <div class="status-bar">
       <div class="status-bar__column">
         <span>No Service</span>
@@ -21,68 +21,76 @@
       </div>
     </div>
 
-    <header class="screen-header">
-      <h1 class="screen-header__title">Chats</h1>
-      <div class="screen-header__icons">
-        <span><i class="fas fa-search fa-lg"></i></span>
-        <span class="screen-header__chat-icon">
-          <span class="screen-header__chat-plus">+</span>
-          <i class="far fa-comment fa-lg"></i>
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <a href="chats.html">
+          <i class="fas fa-angle-left fa-2x"></i>
+        </a>
+      </div>
+      <div class="alt-header__column">
+        <h1 class="alt-header__title">마망❤️</h1>
+      </div>
+      <div class="alt-header__column">
+        <span>
+          <i class="fas fa-search fa-lg"></i>
         </span>
-        <span><i class="fas fa-music fa-lg"></i></span>
-        <span class="screen-header__cog-icon">
-          <span class="screen-header__dot"></span>
-          <a href="settings.html">
-            <i class="fas fa-cog fa-lg"></i>
-          </a>
+        <span>
+          <i class="fas fa-bars fa-lg"></i>
         </span>
       </div>
     </header>
 
-    <main class="main-screen">
-      <div class="user-component">
-        <div class="user-component__column">
-          <img src="img/mom.jpeg" class="user-component__avatar" />
-          <div class="user-component__text">
-            <h4 class="user-component__title">Mamang</h4>
-            <h6 class="user-component__subtitle">
-              이 가시나야!! 햄버거 먹지 말랬지!~!~
-            </h6>
+    <main class="main-screen main-chat">
+      <div class="chat__timestamp">Tuesday, June 15, 2015</div>
+
+      <div class="message-row">
+        <img src="img/mom.jpeg" />
+        <div class="message-row__content">
+          <span class="message__author">마망❤️</span>
+          <div class="message__info">
+            <span class="message__bubble">이 가시나야!!</span>
+            <span class="message__time">21:27</span>
           </div>
         </div>
-        <div class="user-component__column">
-          <span class="user-component__time">21:22</span>
-          <div class="badge">1</div>
+      </div>
+
+      <div class="message-row message-row--own">
+        <div class="message-row__content">
+          <div class="message__info">
+            <span class="message__bubble">네 어머니!!</span>
+            <span class="message__time">21:27</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="message-row">
+        <img src="img/mom.jpeg" />
+        <div class="message-row__content">
+          <span class="message__author">마망❤️</span>
+          <div class="message__info">
+            <span class="message__bubble"
+              >늙은 엄마 밥상을 좀 차려줘야지!!ㅠ</span
+            >
+            <span class="message__time">21:27</span>
+          </div>
         </div>
       </div>
     </main>
 
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__btn">
-          <a class="nav__link" href="friends.html"
-            ><i class="far fa-user fa-2x"></i
-          ></a>
-        </li>
-        <li class="nav__btn">
-          <a class="nav__link" href="chat.html">
-            <span class="nav__notification badge">1</span
-            ><i class="fas fa-comment fa-2x"></i
-          ></a>
-        </li>
-        <li class="nav__btn">
-          <a class="nav__link" href="find.html"
-            ><i class="fas fa-search fa-2x"></i
-          ></a>
-        </li>
-        <li class="nav__btn">
-          <a class="nav__link" href="more.html"
-            ><span class="nav__dot"></span
-            ><i class="fas fa-ellipsis-h fa-2x"></i
-          ></a>
-        </li>
-      </ul>
-    </nav>
+    <form class="reply">
+      <div class="reply__plus-btn">
+        <span>+</span>
+      </div>
+      <div class="reply__input-msg">
+        <input type="text" placeholder="Write a message" />
+        <div class="reply__input-msg__btn">
+          <i class="far fa-smile-wink fa-2x"></i>
+          <button>
+            <i class="fas fa-arrow-up"></i>
+          </button>
+        </div>
+      </div>
+    </form>
 
     <script
       src="https://kit.fontawesome.com/6478f529f2.js"

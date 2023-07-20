@@ -1,0 +1,57 @@
+.reply {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 15px;
+  align-items: center;
+}
+
+.reply__plus-btn span {
+  margin-right: 15px;
+  font-size: 40px;
+  border-radius: 30%;
+  border: 2.5px solid var(--black04);
+  color: var(--black04);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+}
+
+.reply__input-msg {
+  border-radius: 24px;
+  border: var(--main-border);
+  width: 94%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.reply__input-msg input {
+  border: none;
+  background: none;
+  padding: 12px;
+  font-size: 16px;
+}
+.reply__input-msg__btn {
+  display: flex;
+  align-items: center;
+  color: var(--black04);
+}
+.reply__input-msg__btn button {
+  border: none;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: var(--yellow);
+  font-size: 22px;
+  margin: 0 3px 0 18px;
+}
+.reply__input-msg__btn button:focus,
+.reply__input-msg__btn button:focus {
+  background-color: var(--dark-yellow);
+}
