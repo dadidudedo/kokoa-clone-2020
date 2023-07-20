@@ -12,8 +12,8 @@
 .screen-header__icons span {
   margin-left: 25px;
 }
-.screen-header__icons span:nth-child(2),
-.screen-header__icons span:nth-child(4) {
+.screen-header__icons .screen-header__cog-icon,
+.screen-header__icons .screen-header__chat-icon {
   position: relative;
 }
 .screen-header__chat-plus {

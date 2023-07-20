@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="css/styles.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to Kokoa Clone</title>
+    <title>Chat - Kokoa Clone</title>
   </head>
 
   <body onload="showClock()">
@@ -25,12 +25,17 @@
       <h1 class="screen-header__title">Chats</h1>
       <div class="screen-header__icons">
         <span><i class="fas fa-search fa-lg"></i></span>
-        <span>
+        <span class="screen-header__chat-icon">
           <span class="screen-header__chat-plus">+</span>
           <i class="far fa-comment fa-lg"></i>
         </span>
         <span><i class="fas fa-music fa-lg"></i></span>
-        <span><i class="fas fa-cog fa-lg"></i></span>
+        <span class="screen-header__cog-icon">
+          <span class="screen-header__dot"></span>
+          <a href="settings.html">
+            <i class="fas fa-cog fa-lg"></i>
+          </a>
+        </span>
       </div>
     </header>
 

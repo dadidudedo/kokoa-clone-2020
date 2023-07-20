@@ -2,4 +2,8 @@
   --yellow: #fae100;
   --horizontal-space: 25px;
   --main-border: 1px solid rgba(0, 0, 0, 0.2);
+  --sub-border: 1px solid rgba(150, 150, 150, 0.1);
+  --black07: rgba(0, 0, 0, 0.7);
+  --black03: rgba(0, 0, 0, 0.3);
+  --black01: rgba(150, 150, 150, 0.1);
 }
