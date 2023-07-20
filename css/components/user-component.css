@@ -24,6 +24,8 @@
   margin-top: 8px;
   color: rgba(0, 0, 0, 0.5);
   font-size: 17px;
+  display: flex;
+  align-items: center;
 }
 
 .user-component__avatar--xl {
@@ -47,7 +49,23 @@
   align-items: flex-end;
 }
 
+.user-component__column i {
+  color: #2e363e;
+}
+
 .user-component__time {
   margin-bottom: 10px;
   display: block;
+}
+
+.user-component__subtitle i {
+  border: 2px solid tomato;
+  border-radius: 50%;
+  display: inline-flex;
+  width: 18px;
+  height: 18px;
+  align-items: center;
+  justify-content: center;
+  color: tomato;
+  margin-left: 10px;
 }
