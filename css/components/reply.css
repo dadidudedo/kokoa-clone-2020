@@ -8,6 +8,7 @@
   justify-content: space-between;
   padding: 5px 15px;
   align-items: center;
+  transition: all 0.5s ease-in-out;
 }
 
 .reply__plus-btn span {
@@ -26,16 +27,20 @@
 .reply__input-msg {
   border-radius: 24px;
   border: var(--main-border);
+  background-color: white;
   width: 94%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  transition: all 0.5s ease-in-out;
 }
 .reply__input-msg input {
   border: none;
   background: none;
   padding: 12px;
   font-size: 16px;
+  display: flex;
+  width: 100%;
 }
 .reply__input-msg__btn {
   display: flex;
@@ -50,8 +55,42 @@
   background-color: var(--yellow);
   font-size: 22px;
   margin: 0 3px 0 18px;
+  transition: background 0.2s ease-in-out;
 }
-.reply__input-msg__btn button:focus,
+
+@keyframes rotateSend {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
 .reply__input-msg__btn button:focus {
   background-color: var(--dark-yellow);
+}
+.reply__input-msg__btn button:hover {
+  animation: rotateCog 2s ease-in-out infinite;
+}
+
+.reply .reply__plus-btn,
+.reply .fa-smile-wink {
+  transition: all 0.2s ease-in-out;
+}
+
+.reply:focus-within .reply__plus-btn {
+  transform: translateX(-50%);
+  opacity: 0;
+}
+.reply:focus-within .fa-smile-wink {
+  transform: translateX(80%);
+  opacity: 0;
+}
+.reply:focus-within .reply__input-msg {
+  transform: scale(115%) translateX(-5%) translateY(-120%);
+  border-color: rgba(0, 0, 0, 0.1);
+  border-width: 2px;
+}
+.reply:focus-within {
+  transform: translateY(100%);
 }

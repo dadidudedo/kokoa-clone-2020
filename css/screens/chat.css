@@ -17,22 +17,11 @@
   z-index: 1;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
 .main-chat {
   margin-top: 110px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  animation: fadeIn 0.8s linear;
 }
 
 .chat__timestamp {
@@ -43,11 +32,63 @@
   margin-bottom: 25px;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 .message-row {
   width: 100%;
   display: flex;
   margin-bottom: 25px;
+  opacity: 0;
 }
+
+.main-chat > div:nth-child(1) {
+  animation: fadeIn 0.8s linear;
+}
+.main-chat > .message-row {
+  animation: fadeInLeft 0.8s linear forwards;
+}
+.main-chat > .message-row--own {
+  animation: fadeInRight 0.8s linear forwards;
+}
+.main-chat > div:nth-child(2) {
+  animation-delay: 0.8s;
+}
+.main-chat > div:nth-child(3) {
+  animation-delay: 1.6s;
+}
+.main-chat > div:nth-child(4) {
+  animation-delay: 2.4s;
+}
+
 .message-row img {
   width: 50px;
   height: 50px;
