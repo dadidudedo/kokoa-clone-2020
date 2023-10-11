@@ -1,115 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="css/styles.css" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chat whit Mamang - Kokoa Clone</title>
-  </head>
+	<head>
+		<link rel="stylesheet" href="css/styles.css" />
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Chat whit Mamang - Kokoa Clone</title>
+	</head>
 
-  <body onload="showClock()" id="chat-screen">
-    <div class="status-bar">
-      <div class="status-bar__column">
-        <span>No Service</span>
-        <i class="fas fa-wifi"></i>
-      </div>
-      <div class="status-bar__column" id="divClock" class="clock"></div>
-      <div class="status-bar__column">
-        <span>100%</span>
-        <i class="fas fa-battery-full fa-lg"></i>
-        <i class="fas fa-bolt"></i>
-      </div>
-    </div>
+	<body onload="showClock()" id="chat-screen">
+		<div class="status-bar">
+			<div class="status-bar__column">
+				<span>No Service</span>
+				<i class="fas fa-wifi"></i>
+			</div>
+			<div class="status-bar__column" id="divClock" class="clock"></div>
+			<div class="status-bar__column">
+				<span>100%</span>
+				<i class="fas fa-battery-full fa-lg"></i>
+				<i class="fas fa-bolt"></i>
+			</div>
+		</div>
 
-    <header class="alt-header">
-      <div class="alt-header__column">
-        <a href="chats.html">
-          <i class="fas fa-angle-left fa-2x"></i>
-        </a>
-      </div>
-      <div class="alt-header__column">
-        <h1 class="alt-header__title">마망❤️</h1>
-      </div>
-      <div class="alt-header__column">
-        <span>
-          <i class="fas fa-search fa-lg"></i>
-        </span>
-        <span>
-          <i class="fas fa-bars fa-lg"></i>
-        </span>
-      </div>
-    </header>
+		<header class="alt-header">
+			<div class="alt-header__column">
+				<a href="chats.html">
+					<i class="fas fa-angle-left fa-2x"></i>
+				</a>
+			</div>
+			<div class="alt-header__column">
+				<h1 class="alt-header__title">마망❤️</h1>
+			</div>
+			<div class="alt-header__column">
+				<span>
+					<i class="fas fa-search fa-lg"></i>
+				</span>
+				<span>
+					<i class="fas fa-bars fa-lg"></i>
+				</span>
+			</div>
+		</header>
 
-    <main class="main-screen main-chat">
-      <div class="chat__timestamp">Tuesday, June 15, 2015</div>
+		<main class="main-screen main-chat">
+			<div class="chat__timestamp">Tuesday, June 15, 2015</div>
 
-      <div class="message-row">
-        <img src="img/mom.jpeg" />
-        <div class="message-row__content">
-          <span class="message__author">마망❤️</span>
-          <div class="message__info">
-            <span class="message__bubble">이 가시나야!!</span>
-            <span class="message__time">21:27</span>
-          </div>
-        </div>
-      </div>
+			<div class="message-row">
+				<img src="img/mom.jpeg" />
+				<div class="message-row__content">
+					<span class="message__author">마망❤️</span>
+					<div class="message__info">
+						<span class="message__bubble">이 가시나야!!</span>
+						<span class="message__time">21:27</span>
+					</div>
+				</div>
+			</div>
 
-      <div class="message-row message-row--own">
-        <div class="message-row__content">
-          <div class="message__info">
-            <span class="message__bubble">네 어머니!!</span>
-            <span class="message__time">21:27</span>
-          </div>
-        </div>
-      </div>
+			<div class="message-row message-row--own">
+				<div class="message-row__content">
+					<div class="message__info">
+						<span class="message__bubble">네 어머니!!</span>
+						<span class="message__time">21:27</span>
+					</div>
+				</div>
+			</div>
 
-      <div class="message-row">
-        <img src="img/mom.jpeg" />
-        <div class="message-row__content">
-          <span class="message__author">마망❤️</span>
-          <div class="message__info">
-            <span class="message__bubble"
-              >늙은 엄마 밥상을 좀 차려줘야지!!ㅠ</span
-            >
-            <span class="message__time">21:27</span>
-          </div>
-        </div>
-      </div>
-    </main>
+			<div class="message-row">
+				<img src="img/mom.jpeg" />
+				<div class="message-row__content">
+					<span class="message__author">마망❤️</span>
+					<div class="message__info">
+						<span class="message__bubble"
+							>늙은 엄마 밥상을 좀 차려줘야지!!ㅠ</span
+						>
+						<span class="message__time">21:27</span>
+					</div>
+				</div>
+			</div>
+		</main>
 
-    <form class="reply">
-      <div class="reply__plus-btn">
-        <span>+</span>
-      </div>
-      <div class="reply__input-msg">
-        <input type="text" placeholder="Write a message" />
-        <div class="reply__input-msg__btn">
-          <i class="far fa-smile-wink fa-2x"></i>
-          <button>
-            <i class="fas fa-arrow-up"></i>
-          </button>
-        </div>
-      </div>
-    </form>
+		<form class="reply">
+			<div class="reply__plus-btn">
+				<span>+</span>
+			</div>
+			<div class="reply__input-msg">
+				<input type="text" placeholder="Write a message" />
+				<div class="reply__input-msg__btn">
+					<i class="far fa-smile-wink fa-2x"></i>
+					<button>
+						<i class="fas fa-arrow-up"></i>
+					</button>
+				</div>
+			</div>
+		</form>
 
-    <div id="no-mobile">
-      <span>Your screen is too big 😭<br />Please connect via mobile</span>
-    </div>
+		<div id="no-mobile">
+			<span>Your screen is too big 😭<br />Please connect via mobile</span>
+		</div>
 
-    <script
-      src="https://kit.fontawesome.com/6478f529f2.js"
-      crossorigin="anonymous"
-    ></script>
-    <script type="text/javascript">
-      function showClock() {
-        var currentDate = new Date();
-        var divClock = document.getElementById("divClock");
-        var msg = "";
-        msg += currentDate.getHours() + ":";
-        msg += currentDate.getMinutes();
-        divClock.innerText = msg;
-        setTimeout(showClock, 1000); //1초마다 갱신
-      }
-    </script>
-  </body>
+		<script
+			src="https://kit.fontawesome.com/23ec5bd36e.js"
+			crossorigin="anonymous"></script>
+		<script type="text/javascript">
+			function showClock() {
+				var currentDate = new Date();
+				var divClock = document.getElementById('divClock');
+				var msg = '';
+				msg += currentDate.getHours() + ':';
+				msg += currentDate.getMinutes();
+				divClock.innerText = msg;
+				setTimeout(showClock, 1000); //1초마다 갱신
+			}
+		</script>
+	</body>
 </html>
